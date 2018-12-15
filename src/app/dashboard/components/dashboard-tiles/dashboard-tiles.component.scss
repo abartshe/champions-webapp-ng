@@ -1,0 +1,52 @@
+@import 'colors';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, fit-content(250px));
+  grid-gap: 50px;
+}
+
+.tiles {
+  border: 5px solid black;
+  height: 400px;
+  width: 250px;
+  cursor: pointer;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-image {
+    height: 400px;
+    width: 250px;
+  }
+  &-header {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.cosmic {
+  border-color: $cyan;
+}
+
+.mutant {
+  border-color: $yellow;
+}
+
+.mystic {
+  border-color: $purple;
+}
+
+.science {
+  border-color: $green;
+}
+
+.skill {
+  border-color: $red;
+}
+
+.tech {
+  border-color: $blue;
+}

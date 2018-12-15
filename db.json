@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Spider-Man",
+      "class": "science",
       "bio": "Peter Parker, a nerdy scientist, leads a secret double life as the Amazing Spider-Man! Swinging through the streets on his webs, he tackles the most despicable criminals of New York City with his spectacular strength, acrobatic skills, and Spidey Sense. All in a day's work for your Friendly Neighborhood Spider-Man!",
       "signatureAbility": "Spider Sense",
       "image": "assets/images/spiderman.jpg"
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "name": "Killmonger",
+      "class": "skill",
       "bio": "Erik Stevens' ruthlessness and combat skill earned him the nickname \"Killmonger\" during his time as a black-ops soldier. While he has not set foot in Wakanda for a long time, he has returned with a plan that threatens to put Black Panther and all of Wakanda at risk. Using his charisma, combat prowess, and his knowledge of Wakandan customs, Erik Killmonger is an imminent threat to all that T'Challa holds dear.",
       "signatureAbility": "Reverberation",
       "image": "assets/images/killmonger.jpg"

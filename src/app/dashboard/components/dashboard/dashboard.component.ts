@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 
-import { QueryChampions } from '../dashboard.actions';
-import { DashboardState } from '../dashboard.state';
-import { Champion } from '../models/Champion';
+import { QueryChampions } from '../../dashboard.actions';
+import { DashboardState } from '../../dashboard.state';
+import { Champion } from '../../models/Champion';
 
 @Component({
   selector: 'champions-dashboard',
