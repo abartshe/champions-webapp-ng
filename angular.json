@@ -27,7 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/scss/base.scss"
+              "src/scss/base.scss",
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              }
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -108,7 +111,10 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/scss/base.scss"
+              "src/scss/base.scss",
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              }
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

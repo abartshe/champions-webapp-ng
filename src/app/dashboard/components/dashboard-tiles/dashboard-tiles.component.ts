@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Champion } from '../../models/Champion';
+import { Character } from '../../models/character';
 
 @Component({
   selector: 'champions-dashboard-tiles',
@@ -7,7 +7,7 @@ import { Champion } from '../../models/Champion';
   styleUrls: ['./dashboard-tiles.component.scss']
 })
 export class DashboardTilesComponent implements OnInit {
-  @Input() champions: Champion[];
+  @Input() characters: Character[];
 
   constructor() { }
 

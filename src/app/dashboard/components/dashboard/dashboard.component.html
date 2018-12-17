@@ -1,9 +1,4 @@
-<h2>
-  Champion Details
-</h2>
-
-<h5>
-
-</h5>
-
-<champions-dashboard-tiles [champions]="(champions$ | async)"></champions-dashboard-tiles>
+<champions-dashboard-filters [affiliations]="(affiliations$ | async)"
+                             [origins]="(origins$ | async)"
+                             (filters)="setFilters($event)"></champions-dashboard-filters>
+<champions-dashboard-tiles [characters]="(filterCharacters$ | async)"></champions-dashboard-tiles>

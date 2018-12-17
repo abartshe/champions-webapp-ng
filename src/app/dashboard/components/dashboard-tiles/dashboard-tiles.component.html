@@ -1,22 +1,9 @@
-<p>
-  {{champions | json}}
-</p>
-
 <div class="container">
-  <ng-template ngFor let-champion [ngForOf]="champions">
+  <ng-template ngFor let-character [ngForOf]="characters">
     <div class="tiles-container">
-      <div class="tiles-header">{{champion.name}}</div>
-      <div class="tiles"
-           [ngClass]="{
-            'cosmic': champion.class === 'cosmic',
-            'mutant': champion.class === 'mutant',
-            'mystic': champion.class === 'mystic',
-            'science': champion.class === 'science',
-            'skill': champion.class === 'skill',
-            'tech': champion.class === 'tech'
-           }"
-           [routerLink]="['/${champion.name}']">
-        <img class="tiles-image" [src]="champion.image">
+      <div class="tiles-header">{{character.name}}</div>
+      <div class="tiles">
+        <img class="tiles-image" [src]="character.image">
       </div>
     </div>
   </ng-template>

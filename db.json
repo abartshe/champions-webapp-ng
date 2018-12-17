@@ -1,20 +1,114 @@
 {
-  "champions": [
+  "characters": [
     {
       "id": 1,
       "name": "Spider-Man",
-      "class": "science",
+      "status": "hero",
+      "affiliation": null,
+      "origin": "The Amazing Spider-Man",
       "bio": "Peter Parker, a nerdy scientist, leads a secret double life as the Amazing Spider-Man! Swinging through the streets on his webs, he tackles the most despicable criminals of New York City with his spectacular strength, acrobatic skills, and Spidey Sense. All in a day's work for your Friendly Neighborhood Spider-Man!",
-      "signatureAbility": "Spider Sense",
       "image": "assets/images/spiderman.jpg"
     },
     {
       "id": 2,
       "name": "Killmonger",
-      "class": "skill",
+      "status": "villian",
+      "affiliation": null,
+      "origin": "Black Panther",
       "bio": "Erik Stevens' ruthlessness and combat skill earned him the nickname \"Killmonger\" during his time as a black-ops soldier. While he has not set foot in Wakanda for a long time, he has returned with a plan that threatens to put Black Panther and all of Wakanda at risk. Using his charisma, combat prowess, and his knowledge of Wakandan customs, Erik Killmonger is an imminent threat to all that T'Challa holds dear.",
-      "signatureAbility": "Reverberation",
       "image": "assets/images/killmonger.jpg"
+    }
+  ],
+  "affiliations": [
+    {
+      "id": 1,
+      "name": "The Avengers"
+    },
+    {
+      "id": 2,
+      "name": "Guardians of the Galaxy"
+    },
+    {
+      "id": 3,
+      "name": "X-men"
+    },
+    {
+      "id": 4,
+      "name": "Asgardians"
+    },
+    {
+      "id": 5,
+      "name": "X-Force"
+    },
+    {
+      "id": 6,
+      "name": "Defenders"
+    },
+    {
+      "id": 7,
+      "name": "Fantastic Four"
+    },
+    {
+      "id": 8,
+      "name": "Inhumans"
+    },
+    {
+      "id": 9,
+      "name": "Sinister Six"
+    }
+  ],
+  "origins": [
+    {
+      "id": 1,
+      "name": "The Avengers"
+    },
+    {
+      "id": 2,
+      "name": "Guardians of the Galaxy"
+    },
+    {
+      "id": 3,
+      "name": "X-men"
+    },
+    {
+      "id": 4,
+      "name": "Thor"
+    },
+    {
+      "id": 5,
+      "name": "The Amazing Spider-Man"
+    },
+    {
+      "id": 6,
+      "name": "Daredevil"
+    },
+    {
+      "id": 7,
+      "name": "Fantastic Four"
+    },
+    {
+      "id": 8,
+      "name": "Inhumans"
+    },
+    {
+      "id": 9,
+      "name": "Captain America"
+    },
+    {
+      "id": 10,
+      "name": "Iron Man"
+    },
+    {
+      "id": 11,
+      "name": "The Incredible Hulk"
+    },
+    {
+      "id": 12,
+      "name": "Doctor Strange"
+    },
+    {
+      "id": 13,
+      "name": "Black Panther"
     }
   ]
 }

@@ -2,17 +2,21 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { Character } from '../models/character';
+import { LookupItem } from '../models';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
-export class DashboardService {
+export class LookupService {
 
   constructor(private http: HttpClient) { }
 
-  getCharacters(): Observable<Character[]> {
-    return this.http.get<Character[]>(`${environment.apiBaseURL}/api/characters`);
+  getLookupItem(type: LookupOptions) {
+    return this.http.get<LookupItem[]>(`${environment.apiBaseURL}/api/lookup/${type}`);
   }
 }
+
+export type LookupOptions =
+  'affiliations' |
+  'origins';

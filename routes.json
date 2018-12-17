@@ -1,3 +1,5 @@
 {
-  "/api/champions": "/champions"
+  "/api/characters": "/characters",
+  "/api/lookup/affiliations": "/affiliations",
+  "/api/lookup/origins": "/origins"
 }
