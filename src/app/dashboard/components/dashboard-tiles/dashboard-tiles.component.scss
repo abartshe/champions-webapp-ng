@@ -6,8 +6,8 @@
 
 .tiles {
   border: 5px solid black;
-  height: 400px;
-  width: 250px;
+  height: 350px;
+  width: 275px;
   cursor: pointer;
 
   &-container {
@@ -16,8 +16,8 @@
     align-items: center;
   }
   &-image {
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 275px;
   }
   &-header {
     font-size: 22px;

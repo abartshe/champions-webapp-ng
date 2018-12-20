@@ -4,7 +4,7 @@
     <div class="affiliation">
       <h4>Group Affiliation</h4>
       <mat-form-field>
-        <mat-select placeholder="Affiliation" (selectionChange)="setFilter($event.value, 'affiliation')">
+        <mat-select placeholder="Affiliation" (selectionChange)="setAffiliationFilter($event.value)">
           <mat-option>None</mat-option>
           <mat-option *ngFor="let affiliation of affiliations" [value]="affiliation.name">
             {{affiliation.name}}
@@ -16,7 +16,7 @@
     <div class="origin">
       <h4>Origin</h4>
       <mat-form-field>
-        <mat-select placeholder="Origin" (selectionChange)="setFilter($event.value, 'origin')">
+        <mat-select placeholder="Origin" (selectionChange)="setOriginFilter($event.value)">
           <mat-option>None</mat-option>
           <mat-option *ngFor="let origin of origins" [value]="origin.name">
             {{origin.name}}

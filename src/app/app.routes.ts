@@ -9,6 +9,7 @@ export const routes: Route[] = [
     component: LayoutComponent,
     children: [
       { path: '', loadChildren: 'app/dashboard/dashboard.module#DashboardModule'},
+      { path: 'character/:id', loadChildren: 'app/character/character.module#CharacterModule'},
     ]
   }
 ];

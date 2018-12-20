@@ -1,4 +1,5 @@
 <champions-dashboard-filters [affiliations]="(affiliations$ | async)"
                              [origins]="(origins$ | async)"
-                             (filters)="setFilters($event)"></champions-dashboard-filters>
-<champions-dashboard-tiles [characters]="(filterCharacters$ | async)"></champions-dashboard-tiles>
+                             (affiliationFilter)="setAffiliationFilter($event)"
+                             (originFilter)="setOriginFilter($event)"></champions-dashboard-filters>
+<champions-dashboard-tiles [characters]="(filteredCharacters$ | async)"></champions-dashboard-tiles>

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Character } from '../../models/character';
+import { Router } from '@angular/router';
+
+import { Character } from '../../../core/models/character';
 
 @Component({
   selector: 'champions-dashboard-tiles',
@@ -9,9 +11,13 @@ import { Character } from '../../models/character';
 export class DashboardTilesComponent implements OnInit {
   @Input() characters: Character[];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  navigateToCharacterPage(id: number) {
+    this.router.navigate(['character/', id]);
   }
 
 }

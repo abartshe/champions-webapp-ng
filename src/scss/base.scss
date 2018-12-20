@@ -4,4 +4,10 @@ body {
   height: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+  }
 }

@@ -2,7 +2,7 @@
   <ng-template ngFor let-character [ngForOf]="characters">
     <div class="tiles-container">
       <div class="tiles-header">{{character.name}}</div>
-      <div class="tiles">
+      <div class="tiles" (click)="navigateToCharacterPage(character.id)">
         <img class="tiles-image" [src]="character.image">
       </div>
     </div>

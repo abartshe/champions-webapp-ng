@@ -1,13 +1,103 @@
 {
   "characters": [
     {
-      "id": 1,
-      "name": "Spider-Man",
+      "id": 4,
+      "name": "Abomination",
+      "status": "villian",
+      "affiliation": null,
+      "origin": "The Incredible Hulk",
+      "bio": "Formerly known as Emil Blonsky, a spy of Soviet Yugoslavian origin working for the KGB, the Abomination gained his powers after receiving a dose of gamma radiation similar to that which transformed Bruce Banner into the Incredible Hulk.",
+      "image": "assets/images/marvel_characters/abomination.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Adam Warlock",
+      "status": "hero",
+      "affiliation": "Guardians of the Galaxy",
+      "origin": "Fantastic Four",
+      "bio": "Adam Warlock is an artificially created human who was born in a cocoon at a scientific complex called The Beehive.",
+      "image": "assets/images/marvel_characters/adam_warlock.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Black Widow",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "Iron Man",
+      "bio": "Natasha Romanoff, also known as Black Widow, is a world-renowned super spy and one of S.H.I.E.L.D.'s top agents. Her hand-to-hand combat skills, intelligence, and unpredictability make her a deadly secret weapon. True to her mysterious nature, Black Widow comes and goes as she pleases, but always appears exactly when her particular skills are needed.",
+      "image": "assets/images/marvel_characters/black_widow.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Captain America",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "Captain America",
+      "bio": "Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army. Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty.",
+      "image": "assets/images/marvel_characters/captain_america.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Colleen Wing",
       "status": "hero",
       "affiliation": null,
-      "origin": "The Amazing Spider-Man",
-      "bio": "Peter Parker, a nerdy scientist, leads a secret double life as the Amazing Spider-Man! Swinging through the streets on his webs, he tackles the most despicable criminals of New York City with his spectacular strength, acrobatic skills, and Spidey Sense. All in a day's work for your Friendly Neighborhood Spider-Man!",
-      "image": "assets/images/spiderman.jpg"
+      "origin": "Iron Fist",
+      "bio": "Colleen Wing was raised in Japan by her grandfather Kanji Ozawa, who taught her the ways of a samurai, in which she became highly skilled, after which she teamed up with Misty Knight at the behest of Tony Stark as a new Heroes for Hire tasked with capturing superhumans who have not registered.",
+      "image": "assets/images/marvel_characters/colleen_wing.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Daredevil",
+      "status": "hero",
+      "affiliation": "Defenders",
+      "origin": "Daredevil",
+      "bio": "Abandoned by his mother, Matt Murdock was raised by his father, boxer \"Battling Jack\" Murdock, in Hell's Kitchen. Realizing that rules were needed to prevent people from behaving badly, young Matt decided to study law; however, when he saved a man from an oncoming truck, it spilled a radioactive cargo that rendered Matt blind while enhancing his remaining senses. Under the harsh tutelage of blind martial arts master Stick, Matt mastered his heightened senses and became a formidable fighter.",
+      "image": "assets/images/marvel_characters/daredevil.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Falcon",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "Captain America",
+      "bio": "With a mental connection to all birds and a suit that gives him wings to fly, The Falcon has been both the partner to Captain America and an Avenger himself. Whether as a super hero or in his secret identity of social worker Sam Wilson, The Falcon dedicates his life to standing up for others.",
+      "image": "assets/images/marvel_characters/falcon.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Hawkeye",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "The Avengers",
+      "bio": "Hawkeye is an expert archer with an attitude just as on-target as his aim. His stealth combat experience and his ability to hit any target with any projectile make him a valuable member of the Avengers. However, he refuses to let things get too serious, as he has as many jokes as he does arrows!",
+      "image": "assets/images/marvel_characters/hawkeye.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Hulk",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "The Incredible Hulk",
+      "bio": "Caught in a gamma bomb explosion while trying to save the life of a teenager, Dr. Bruce Banner was transformed into the incredibly powerful creature called the Hulk. An all too often misunderstood hero, the angrier the Hulk gets, the stronger the Hulk gets.",
+      "image": "assets/images/marvel_characters/hulk.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Iron Fist",
+      "status": "hero",
+      "affiliation": "Defenders",
+      "origin": "Heroes for Hire",
+      "bio": "Danny is always focused yet relaxed - more Zen-focused than chill surfer dude. But when Danny turns into Iron First, he becomes very rigid with perfect posture. A very Yin/Yang character. Danny is THE Danny Rand the 17-year-old head of the giant Rand Corporation. His wealth rivals Osborne's but you'd never know it from his laid-back attitude. However, as Iron Fist, he takes his powers very seriously. While Danny and Luke are best friends, Danny has a special respect for Spider-Man, acting as a non-judgmental moral commentator on all of Spider-Man's actions.",
+      "image": "assets/images/marvel_characters/iron_fist.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Iron Man",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "Iron Man",
+      "bio": "Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.",
+      "image": "assets/images/marvel_characters/iron_man.jpg"
     },
     {
       "id": 2,
@@ -16,7 +106,16 @@
       "affiliation": null,
       "origin": "Black Panther",
       "bio": "Erik Stevens' ruthlessness and combat skill earned him the nickname \"Killmonger\" during his time as a black-ops soldier. While he has not set foot in Wakanda for a long time, he has returned with a plan that threatens to put Black Panther and all of Wakanda at risk. Using his charisma, combat prowess, and his knowledge of Wakandan customs, Erik Killmonger is an imminent threat to all that T'Challa holds dear.",
-      "image": "assets/images/killmonger.jpg"
+      "image": "assets/images/marvel_characters/killmonger.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Spider-Man",
+      "status": "hero",
+      "affiliation": "The Avengers",
+      "origin": "The Amazing Spider-Man",
+      "bio": "Peter Parker, a nerdy scientist, leads a secret double life as the Amazing Spider-Man! Swinging through the streets on his webs, he tackles the most despicable criminals of New York City with his spectacular strength, acrobatic skills, and Spidey Sense. All in a day's work for your Friendly Neighborhood Spider-Man!",
+      "image": "assets/images/marvel_characters/spider_man.jpg"
     }
   ],
   "affiliations": [
@@ -55,6 +154,10 @@
     {
       "id": 9,
       "name": "Sinister Six"
+    },
+    {
+      "id": 10,
+      "name": "S.H.I.E.L.D."
     }
   ],
   "origins": [
@@ -109,6 +212,10 @@
     {
       "id": 13,
       "name": "Black Panther"
+    },
+    {
+      "id": 14,
+      "name": "Heroes for Hire"
     }
   ]
 }

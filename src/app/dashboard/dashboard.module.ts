@@ -5,7 +5,6 @@ import * as material from '@angular/material';
 import { NgxsModule } from '@ngxs/store';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { DashboardService } from './services/dashboard.service';
 import { DashboardState } from './dashboard.state';
 import { DashboardTilesComponent } from './components/dashboard-tiles/dashboard-tiles.component';
 import { DashboardFiltersComponent } from './components/dashboard-filters/dashboard-filters.component';
@@ -32,9 +31,6 @@ const routes: Route[] = [
     material.MatFormFieldModule,
     material.MatSelectModule,
     RouterModule.forChild(routes),
-  ],
-  providers: [
-    DashboardService
   ]
 })
 export class DashboardModule { }

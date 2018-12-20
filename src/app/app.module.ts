@@ -18,12 +18,12 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
+    CoreModule,
     HttpClientModule,
     LayoutModule,
     NgxsModule.forRoot([], {
       developmentMode: !environment.production
     }),
-    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
