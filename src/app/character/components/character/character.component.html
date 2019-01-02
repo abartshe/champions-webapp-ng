@@ -1,3 +1,44 @@
-<p>
-  character works!
-</p>
+<a  [routerLink]="['']">Go Back</a>
+
+<div class="container mt-20" *ngIf="(character$ | async) as character">
+
+  <div class="image-container">
+    <div class="image-frame">
+      <img class="image" [src]="character?.image">
+    </div>
+  </div>
+
+  <div class="info-container">
+
+    <h1>{{character?.name}}</h1>
+
+    <div class="info-column">
+      <div class="info-text">
+        {{character?.bio}}
+      </div>
+    </div>
+
+    <div class="info-column">
+      <h4>Status</h4>
+      <div class="info-text">
+        {{character?.status}}
+      </div>
+    </div>
+
+    <div class="info-column">
+      <h4>Affiliation</h4>
+      <div class="info-text">
+        {{character?.affiliation}}
+      </div>
+    </div>
+
+    <div class="info-column">
+      <h4>Origin</h4>
+      <div class="info-text">
+        {{character?.origin}}
+      </div>
+    </div>
+
+  </div>
+
+</div>

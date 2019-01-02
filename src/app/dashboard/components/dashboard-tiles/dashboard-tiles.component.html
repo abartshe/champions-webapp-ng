@@ -1,9 +1,9 @@
 <div class="container">
   <ng-template ngFor let-character [ngForOf]="characters">
     <div class="tiles-container">
-      <div class="tiles-header">{{character.name}}</div>
-      <div class="tiles" (click)="navigateToCharacterPage(character.id)">
-        <img class="tiles-image" [src]="character.image">
+      <div class="tiles-header">{{character?.name}}</div>
+      <div class="tiles" (click)="navigateToCharacterPage(character?.id)">
+        <img class="tiles-image" [src]="character?.image">
       </div>
     </div>
   </ng-template>

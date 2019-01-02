@@ -25,6 +25,13 @@ export class CharacterState {
     return state.characters;
   }
 
+  @Action(actions.InitializeCharacter)
+  initializeCharacter(
+    { dispatch, getState }: StateContext<CharacterStateModel>
+  ) {
+    if (getState().characters === null) { dispatch(new actions.QueryCharacters()); }
+  }
+
   @Action(actions.QueryCharacters)
   queryCharacters(
     { patchState }: StateContext<CharacterStateModel>

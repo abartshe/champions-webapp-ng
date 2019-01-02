@@ -1,3 +1,6 @@
+export class InitializeDashboard {
+  static type = '[Dashboard] InitializeDashboard';
+}
 export class QueryCharacters {
   static type = '[Dashboard] QueryCharacters';
 }

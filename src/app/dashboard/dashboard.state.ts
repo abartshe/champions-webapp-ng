@@ -59,6 +59,15 @@ export class DashboardState {
     return state.origins;
   }
 
+  @Action(actions.InitializeDashboard)
+  initializeDashboard(
+    { dispatch, getState }: StateContext<DashboardStateModel>
+  ) {
+    if (getState().characters === null) { dispatch(new actions.QueryCharacters()); }
+    if (getState().affiliations === null) { dispatch(new actions.QueryAffiliations()); }
+    if (getState().origins === null) { dispatch(new actions.QueryOrigins()); }
+  }
+
   @Action(actions.QueryCharacters)
   queryCharacters(
     { patchState }: StateContext<DashboardStateModel>
@@ -70,26 +79,6 @@ export class DashboardState {
         });
       })
     );
-  }
-
-  @Action(actions.UpdateAffiliationFilter)
-  updateAffiliationFilter(
-    { patchState }: StateContext<DashboardStateModel>,
-    { filter }: actions.UpdateOriginFilter
-  ) {
-    patchState({
-      affiliationFilter: filter
-    });
-  }
-
-  @Action(actions.UpdateOriginFilter)
-  updateOriginFilter(
-    { patchState }: StateContext<DashboardStateModel>,
-    { filter }: actions.UpdateOriginFilter
-  ) {
-    patchState({
-      originFilter: filter
-    });
   }
 
   @Action(actions.QueryAffiliations)
@@ -116,5 +105,25 @@ export class DashboardState {
         });
       })
     );
+  }
+
+  @Action(actions.UpdateAffiliationFilter)
+  updateAffiliationFilter(
+    { patchState }: StateContext<DashboardStateModel>,
+    { filter }: actions.UpdateOriginFilter
+  ) {
+    patchState({
+      affiliationFilter: filter
+    });
+  }
+
+  @Action(actions.UpdateOriginFilter)
+  updateOriginFilter(
+    { patchState }: StateContext<DashboardStateModel>,
+    { filter }: actions.UpdateOriginFilter
+  ) {
+    patchState({
+      originFilter: filter
+    });
   }
 }

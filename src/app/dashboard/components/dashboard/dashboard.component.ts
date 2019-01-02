@@ -21,11 +21,7 @@ export class DashboardComponent implements OnInit {
   constructor(private store: Store) { }
 
   ngOnInit() {
-    this.store.dispatch([
-      new actions.QueryCharacters(),
-      new actions.QueryAffiliations(),
-      new actions.QueryOrigins(),
-    ]);
+    this.store.dispatch(this.store.dispatch(new actions.InitializeDashboard()));
   }
 
   setAffiliationFilter(filter: string) {

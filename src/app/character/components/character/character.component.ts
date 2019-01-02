@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Select, Store } from '@ngxs/store';
-import { Observable } from 'rxjs';
-import { take, filter, tap } from 'rxjs/operators';
+import { Observable, combineLatest } from 'rxjs';
+import { map, filter } from 'rxjs/operators';
 
 import { Character } from '../../../core/models/character';
-import { QueryCharacters } from '../../character.actions';
+import { InitializeCharacter } from '../../character.actions';
 import { CharacterState } from '../../character.state';
+
 
 @Component({
   selector: 'champions-character',
@@ -16,15 +17,22 @@ import { CharacterState } from '../../character.state';
 export class CharacterComponent implements OnInit {
   @Select(CharacterState.characters) characters$: Observable<Character[]>;
 
+  character$: Observable<Character>;
+
   constructor(private activeRoute: ActivatedRoute,
               private store: Store) { }
 
   ngOnInit() {
-    this.characters$.pipe(
-      take(1),
-      filter(character => character === null),
-      tap(() => this.store.dispatch(new QueryCharacters()))
-    ).subscribe();
+    this.store.dispatch(new InitializeCharacter());
+
+    this.character$ = combineLatest(
+      this.activeRoute.params,
+      this.characters$.pipe(filter(x => x !== null))
+    ).pipe(
+      map(([param, characters]) => {
+        return characters.find(character => character.id === Number(param.id));
+      })
+    );
   }
 
 }
